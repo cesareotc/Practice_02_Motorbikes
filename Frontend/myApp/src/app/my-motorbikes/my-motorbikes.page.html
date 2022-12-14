@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>my-motorbikes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+  <ion-item *ngFor="let m of motorbikes">
+    <ion-label>
+      <h1>{{ m.brand }}</h1>
+      <p>{{ m.model }}</p>
+      <p>{{ m.engine }}</p>
+    </ion-label>
+  </ion-item>
+</ion-content>
